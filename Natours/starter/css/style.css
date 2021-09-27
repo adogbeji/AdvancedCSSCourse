@@ -66,8 +66,7 @@ body {
   /* Guards against animation 'shakiness' */
   margin-bottom: 6rem;
 }
-
-.heading-primary--main {
+.heading-primary:--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -81,8 +80,7 @@ body {
   /* animation-iteration-count: 3; */
   /* animation-delay: 3s; */
 }
-
-.heading-primary--sub {
+.heading-primary:--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -140,7 +138,7 @@ body {
     /* Setting it to 0 means it will look the way it does normally */
   }
 }
-.btn:link, .btn:visited {
+.btn::link, .btn::visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -152,22 +150,18 @@ body {
   font-size: 1.6rem;
   /* This makes it equal to 16px as it was before */
 }
-
-.btn:hover {
+.btn::hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
-
-.btn:active {
+.btn::active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
-
-.btn--white {
+.btn:--white {
   color: #777777;
   background-color: #FFFFFF;
 }
-
 .btn::after {
   content: "";
   /* Content property must be specified for the ::after psuedo-element to appear */
@@ -183,18 +177,15 @@ body {
   /* Places ::after psuedo-element behind the button */
   transition: all 0.4s;
 }
-
-.btn--white::after {
+.btn:--white::after {
   background-color: #FFFFFF;
 }
-
-.btn:hover::after {
+.btn .btn:hover::after {
   /* The ::after psuedo-element is being applied in the hover state */
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-
-.btn--animated {
+.btn .btn--animated {
   animation: moveInFromBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
   /* Automatically applies styles of the 0% BEFORE the animation starts */
