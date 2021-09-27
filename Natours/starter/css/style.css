@@ -42,19 +42,16 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* Specify coordinates which define the polygon */
 }
-
-.header__logo-box {
+.header:__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-
-.header__logo {
+.header:__logo {
   height: 3.5rem;
   /* The browser will automatically scale the width accordingly */
 }
-
-.header__text-box {
+.header:__text-box {
   position: absolute;
   top: 40%;
   left: 50%;

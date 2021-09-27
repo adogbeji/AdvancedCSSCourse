@@ -48,24 +48,24 @@ body {
   background-size: cover;
   background-position: top;  /* Ensures that top of image always stays at top of container on all viewport sizes */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);  /* Specify coordinates which define the polygon */
-}
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
+  &:__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
 
-.header__logo {
-  height: 3.5rem;  /* The browser will automatically scale the width accordingly */
-}
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  &:__logo {
+    height: 3.5rem;  /* The browser will automatically scale the width accordingly */
+  }
+  
+  &:__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .heading-primary {
