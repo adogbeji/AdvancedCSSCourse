@@ -154,12 +154,20 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
+.btn:hover::after {
+  /* The ::after psuedo-element is being applied in the hover state */
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .btn--white {
   color: #777777;
+  background-color: #FFFFFF;
+}
+.btn--white::after {
   background-color: #FFFFFF;
 }
 .btn::after {
@@ -176,14 +184,6 @@ body {
   z-index: -1;
   /* Places ::after psuedo-element behind the button */
   transition: all 0.4s;
-}
-.btn--white::after {
-  background-color: #FFFFFF;
-}
-.btn:hover::after {
-  /* The ::after psuedo-element is being applied in the hover state */
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
 }
 .btn--animated {
   animation: moveInFromBottom 0.5s ease-out 0.75s;
