@@ -1,10 +1,8 @@
 /*
 COLORS:
-
 Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
-
 */
 *,
 *::after,
@@ -42,16 +40,16 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* Specify coordinates which define the polygon */
 }
-.header:__logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-.header:__logo {
+.header__logo {
   height: 3.5rem;
   /* The browser will automatically scale the width accordingly */
 }
-.header:__text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -66,7 +64,8 @@ body {
   /* Guards against animation 'shakiness' */
   margin-bottom: 6rem;
 }
-.heading-primary:--main {
+
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -80,7 +79,8 @@ body {
   /* animation-iteration-count: 3; */
   /* animation-delay: 3s; */
 }
-.heading-primary:--sub {
+
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -138,7 +138,7 @@ body {
     /* Setting it to 0 means it will look the way it does normally */
   }
 }
-.btn::link, .btn::visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -150,15 +150,15 @@ body {
   font-size: 1.6rem;
   /* This makes it equal to 16px as it was before */
 }
-.btn::hover {
+.btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
-.btn::active {
+.btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
-.btn:--white {
+.btn--white {
   color: #777777;
   background-color: #FFFFFF;
 }
@@ -177,15 +177,15 @@ body {
   /* Places ::after psuedo-element behind the button */
   transition: all 0.4s;
 }
-.btn:--white::after {
+.btn--white::after {
   background-color: #FFFFFF;
 }
-.btn .btn:hover::after {
+.btn:hover::after {
   /* The ::after psuedo-element is being applied in the hover state */
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.btn .btn--animated {
+.btn--animated {
   animation: moveInFromBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
   /* Automatically applies styles of the 0% BEFORE the animation starts */

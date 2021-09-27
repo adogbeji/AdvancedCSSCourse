@@ -1,10 +1,8 @@
 /*
 COLORS:
-
 Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
-
 */
 
 $color-primary: #55c57a;
@@ -49,17 +47,17 @@ body {
   background-position: top;  /* Ensures that top of image always stays at top of container on all viewport sizes */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);  /* Specify coordinates which define the polygon */
 
-  &:__logo-box {
+  &__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
   }
-
-  &:__logo {
+  
+  &__logo {
     height: 3.5rem;  /* The browser will automatically scale the width accordingly */
   }
   
-  &:__text-box {
+  &__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -73,28 +71,28 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;  /* Guards against animation 'shakiness' */
   margin-bottom: 6rem;
+}
 
-  &:--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-  
-    animation-name: moveInLeft;  /* Animation being referenced */
-    animation-duration: 1s;  /* How long animation should take */
-    animation-timing-function: ease-out;  /* This determines how the animation should proceed */
-  
-    /* animation-iteration-count: 3; */
-    /* animation-delay: 3s; */
-  }
-  
-  &:--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out;
-  }
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+
+  animation-name: moveInLeft;  /* Animation being referenced */
+  animation-duration: 1s;  /* How long animation should take */
+  animation-timing-function: ease-out;  /* This determines how the animation should proceed */
+
+  /* animation-iteration-count: 3; */
+  /* animation-delay: 3s; */
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation: moveInRight 1s ease-out;
 }
 
 @keyframes moveInLeft {  /* Percentages correspond to times during the animation */
@@ -142,8 +140,8 @@ body {
 }
 
 .btn {
-  &::link, 
-  &::visited {
+  &:link, 
+  &:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
@@ -154,17 +152,17 @@ body {
     font-size: 1.6rem;  /* This makes it equal to 16px as it was before */
   }
   
-  &::hover {
+  &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, .2);
   }
   
-  &::active {
+  &:active {
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba($color-black, .2);
   }
   
-  &:--white {
+  &--white {
     color: $color-grey-dark;
     background-color: $color-white;
   }
@@ -182,19 +180,19 @@ body {
     transition: all 0.4s;
   }
   
-  &:--white::after {
+  &--white::after {
     background-color: $color-white;
   }
   
-  .btn:hover::after {  /* The ::after psuedo-element is being applied in the hover state */
+  &:hover::after {  /* The ::after psuedo-element is being applied in the hover state */
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
   }
   
-  .btn--animated {
+  &--animated {
     animation: moveInFromBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;  /* Automatically applies styles of the 0% BEFORE the animation starts */
-  }  
+  }
 }
 
 // .btn:link, .btn:visited {
