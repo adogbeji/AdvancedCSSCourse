@@ -1,0 +1,55 @@
+.btn {
+    &:link, 
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      border-radius: 10rem;
+      transition: all 0.2s;
+      position: relative;  /* Reference for ::after psuedo-element */
+      font-size: 1.6rem;  /* This makes it equal to 16px as it was before */
+    }
+    
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black, .2);
+  
+      &::after {  /* The ::after psuedo-element is being applied in the hover state */
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+    
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+    
+    &--white {
+      color: $color-grey-dark;
+      background-color: $color-white;
+  
+      &::after {
+        background-color: $color-white;
+      }
+    }
+    
+    &::after {
+      content: '';  /* Content property must be specified for the ::after psuedo-element to appear */
+      display: inline-block;  /* Display property must also be specified */
+      width: 100%;
+      height: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;  /* Places ::after psuedo-element behind the button */
+      transition: all 0.4s;
+    }
+    
+    &--animated {
+      animation: moveInFromBottom 0.5s ease-out 0.75s;
+      animation-fill-mode: backwards;  /* Automatically applies styles of the 0% BEFORE the animation starts */
+    }
+  }
