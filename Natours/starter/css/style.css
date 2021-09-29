@@ -24,6 +24,56 @@ body {
   /* Border & Padding will now be included in height & width measurements */
 }
 
+@keyframes moveInLeft {
+  /* Percentages correspond to times during the animation */
+  0% {
+    /* Before the animation starts */
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    /* You can include ANY percentage you want! */
+    transform: translateX(1rem);
+  }
+  100% {
+    /* When the animation finishes */
+    opacity: 1;
+    transform: translate(0);
+    /* Setting it to 0 means it will look the way it does normally */
+  }
+}
+@keyframes moveInRight {
+  /* Percentages correspond to times during the animation */
+  0% {
+    /* Before the animation starts */
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    /* You can include ANY percentage you want! */
+    transform: translateX(-1rem);
+  }
+  100% {
+    /* When the animation finishes */
+    opacity: 1;
+    transform: translate(0);
+    /* Setting it to 0 means it will look the way it does normally */
+  }
+}
+@keyframes moveInFromBottom {
+  /* Percentages correspond to times during the animation */
+  0% {
+    /* Before the animation starts */
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    /* When the animation finishes */
+    opacity: 1;
+    transform: translate(0);
+    /* Setting it to 0 means it will look the way it does normally */
+  }
+}
 /*
 COLORS:
 Light green: #7ed56f
@@ -88,56 +138,6 @@ Dark green: #28b485
   animation: moveInRight 1s ease-out;
 }
 
-@keyframes moveInLeft {
-  /* Percentages correspond to times during the animation */
-  0% {
-    /* Before the animation starts */
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  80% {
-    /* You can include ANY percentage you want! */
-    transform: translateX(1rem);
-  }
-  100% {
-    /* When the animation finishes */
-    opacity: 1;
-    transform: translate(0);
-    /* Setting it to 0 means it will look the way it does normally */
-  }
-}
-@keyframes moveInRight {
-  /* Percentages correspond to times during the animation */
-  0% {
-    /* Before the animation starts */
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  80% {
-    /* You can include ANY percentage you want! */
-    transform: translateX(-1rem);
-  }
-  100% {
-    /* When the animation finishes */
-    opacity: 1;
-    transform: translate(0);
-    /* Setting it to 0 means it will look the way it does normally */
-  }
-}
-@keyframes moveInFromBottom {
-  /* Percentages correspond to times during the animation */
-  0% {
-    /* Before the animation starts */
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  100% {
-    /* When the animation finishes */
-    opacity: 1;
-    transform: translate(0);
-    /* Setting it to 0 means it will look the way it does normally */
-  }
-}
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
