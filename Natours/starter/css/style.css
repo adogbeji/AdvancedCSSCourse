@@ -74,39 +74,65 @@ body {
     /* Setting it to 0 means it will look the way it does normally */
   }
 }
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  /* Reference for ::after psuedo-element */
+  font-size: 1.6rem;
+  /* This makes it equal to 16px as it was before */
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  /* The ::after psuedo-element is being applied in the hover state */
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn--white {
+  color: #777777;
+  background-color: #FFFFFF;
+}
+.btn--white::after {
+  background-color: #FFFFFF;
+}
+.btn::after {
+  content: "";
+  /* Content property must be specified for the ::after psuedo-element to appear */
+  display: inline-block;
+  /* Display property must also be specified */
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* Places ::after psuedo-element behind the button */
+  transition: all 0.4s;
+}
+.btn--animated {
+  animation: moveInFromBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+  /* Automatically applies styles of the 0% BEFORE the animation starts */
+}
+
 /*
 COLORS:
 Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
 */
-.header {
-  position: relative;
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  /* Ensures that top of image always stays at top of container on all viewport sizes */
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  /* Specify coordinates which define the polygon */
-}
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-.header__logo {
-  height: 3.5rem;
-  /* The browser will automatically scale the width accordingly */
-}
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .heading-primary {
   color: #FFFFFF;
   text-transform: uppercase;
