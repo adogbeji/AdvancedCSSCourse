@@ -1,7 +1,16 @@
+// abstracts folder imports
+@import './abstracts/functions';
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+
+// base folder imports
 @import './base/base';
 @import '.base/animations';
 @import './base/typography';
 @import './base/utilities';
+
+
 
 /*
 COLORS:
