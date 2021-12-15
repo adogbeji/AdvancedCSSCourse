@@ -32,6 +32,10 @@
         }
     }
 
+    &__input:focus + &__button {  // Using adjacent selector (+) to target button when input is focused
+        background-color: var(--color-grey-light-3);
+    }
+
     &__button {
         border: none;
         background-color: var(--color-grey-light-2);  // Makes button look like it's part of input
