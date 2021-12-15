@@ -9,6 +9,10 @@
     background-color: orangered;
     flex: 0 0 40%;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &__input {
         font-family: inherit;
         font-size: inherit;
@@ -19,7 +23,7 @@
         border-radius: 100px;
         width: 90%;
         transition: all .2s;
-        margin: -3.5rem;  // Causes button to be on top of input element
+        margin-right: -3.25rem;  // Causes button to be on top of input element
 
         &:focus {
             outline: none;
