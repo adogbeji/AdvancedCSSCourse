@@ -65,6 +65,7 @@ body {
 }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #FFFFFF;
   border-bottom: var(--color-grey-light-2);
@@ -115,6 +116,10 @@ body {
   outline: none;
   width: 100%;
   background-color: var(--color-grey-light-3);
+}
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: var(--color-grey-light-4);
 }
 .search__input:focus + .search__button {
   background-color: var(--color-grey-light-3);
