@@ -19,6 +19,7 @@
         border-radius: 100px;
         width: 90%;
         transition: all .2s;
+        margin: -3.5rem;  // Causes button to be on top of input element
 
         &:focus {
             outline: none;
@@ -27,7 +28,18 @@
         }
     }
 
-    &__button {}
+    &__button {
+        border: none;
+        background-color: var(--color-grey-light-2);  // Makes button look like it's part of input
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);  // Moves button down when it's clicked
+        }
+    }
 
     &__icon {
         height: 2rem;
