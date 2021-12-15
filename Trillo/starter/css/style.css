@@ -68,6 +68,9 @@ body {
   height: 7rem;
   background-color: #FFFFFF;
   border-bottom: var(--color-grey-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
@@ -89,11 +92,17 @@ body {
   height: 3.25rem;
 }
 
+.search {
+  background-color: orangered;
+}
 .search__icon {
   height: 2rem;
   width: 2rem;
 }
 
+.user-nav {
+  background-color: greenyellow;
+}
 .user-nav__icon {
   height: 2.25rem;
   width: 2.25rem;
