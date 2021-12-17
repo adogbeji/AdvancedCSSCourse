@@ -72,6 +72,8 @@
         padding: 0 2rem;
         cursor: pointer;
         height: 100%; // Makes background colour go from top to bottom on hover
+        display: flex;
+        align-items: center;
     }
 
     & > *:hover {
@@ -83,6 +85,7 @@
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
+        fill: var(--color-grey-dark-2);
     }
 
     &__notification {}
