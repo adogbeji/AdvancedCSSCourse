@@ -63,6 +63,19 @@
 // USER NAVIGATION
 .user-nav {
     background-color: greenyellow;
+
+    display: flex;
+    align-items: center;
+
+    & > * {  // Targets all the direct children (Flex items)
+        padding: 0 2rem;
+        cursor: pointer;
+    }
+
+    & > *:hover {
+        background-color: var(--color-grey-light-2);
+    }
+
     &__icon-box {}
 
     &__icon {
