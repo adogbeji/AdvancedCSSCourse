@@ -62,7 +62,6 @@
 
 // USER NAVIGATION
 .user-nav {
-    background-color: greenyellow;
     align-self: stretch;  // Makes user navigation take up full height of header
 
     display: flex;
@@ -80,7 +79,9 @@
         background-color: var(--color-grey-light-2);
     }
 
-    &__icon-box {}
+    &__icon-box {
+        position: relative;
+    }
 
     &__icon {
         height: 2.25rem;
@@ -92,9 +93,12 @@
         font-size: .8rem;
         height: 1.75rem;
         width: 1.75rem;
-        border-radius: 50%;
+        border-radius: 50%;  // Creates perfect circle
         background-color: var(--color-primary);
         color: #FFFFFF;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
     }
 
     &__user {}
