@@ -63,6 +63,7 @@
 // USER NAVIGATION
 .user-nav {
     background-color: greenyellow;
+    align-self: stretch;  // Makes user navigation take up full height of header
 
     display: flex;
     align-items: center;
@@ -70,6 +71,7 @@
     & > * {  // Targets all the direct children (Flex items)
         padding: 0 2rem;
         cursor: pointer;
+        height: 100%; // Makes background colour go from top to bottom on hover
     }
 
     & > *:hover {
