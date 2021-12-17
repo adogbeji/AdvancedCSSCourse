@@ -99,6 +99,10 @@
         position: absolute;
         top: 1.5rem;
         right: 1.1rem;
+
+        display: flex;  // These 3 lines of code horizontally & vertically center text in circle
+        justify-content: center;
+        align-items: center;
     }
 
     &__user {}
