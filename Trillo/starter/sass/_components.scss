@@ -151,6 +151,8 @@
         text-transform: uppercase;
         display: block;
         padding: 1.5rem 3rem;
+        position: relative;  // Required for z-index to work!
+        z-index: 10;  // Puts link on top of ::before pseudo-element
 
         display: flex;
         align-items: center;
