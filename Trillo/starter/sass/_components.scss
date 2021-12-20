@@ -118,7 +118,19 @@
     list-style: none;
     margin-top: 3.5rem;
 
-    &__item {}
+    &__item {
+        position: relative;
+    }
+
+    &__item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;  // Gives it the same height as list item
+        width: 3px;
+        background-color: var(--color-primary);
+    }
 
     &__link:link,
     &__link:visited {
