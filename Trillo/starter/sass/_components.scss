@@ -134,6 +134,14 @@
         height: 100%;  // Gives it the same height as list item
         width: 3px;
         background-color: var(--color-primary);
+        transform: scaleY(0);  // Normal state without any hover
+        transition: transform .2s,  // The transform happens in 0.2s, before the width changes
+                    width .4s cubic-bezier(1, 0, 0, 1) .2s;
+    }
+
+    &__item:hover::before {
+        transform: scaleY(1);
+        width: 100%;
     }
 
     &__link:link,
