@@ -187,5 +187,6 @@
 
     &__photo {
         width: 100%;
+        display: block;  // Prevents whitespace from appearing underneath image
     }
 }

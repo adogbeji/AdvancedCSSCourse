@@ -88,7 +88,6 @@ body {
 
 .hotel-view {
   background-color: #FFFFFF;
-  background-color: orangered;
   height: 80rem;
   flex: 1;
 }
@@ -246,6 +245,7 @@ body {
 }
 .gallery__photo {
   width: 100%;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
