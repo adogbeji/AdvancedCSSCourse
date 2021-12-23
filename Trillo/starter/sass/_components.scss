@@ -199,8 +199,8 @@
     &__heading {}
 
     &__stars{
-        margin-right: auto;
-        background-color: orangered;
+        margin-right: auto;  // Creates space between 2nd and 3rd hotel overview elements 
+        // background-color: orangered;
     }
 
     &__icon-star,
