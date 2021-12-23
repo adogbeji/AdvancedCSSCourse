@@ -179,3 +179,13 @@
     text-align: center;
     padding: 2.5rem;
 }
+
+
+// GALLERY PHOTOS
+.gallery {
+    display: flex;  // Puts figure elements side-by-side
+
+    &__photo {
+        width: 100%;
+    }
+}

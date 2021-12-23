@@ -241,4 +241,11 @@ body {
   padding: 2.5rem;
 }
 
+.gallery {
+  display: flex;
+}
+.gallery__photo {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
