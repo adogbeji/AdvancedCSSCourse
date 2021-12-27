@@ -208,7 +208,7 @@
 
     &__stars{
         margin-right: auto;  // Creates space between 2nd and 3rd hotel overview elements 
-        // background-color: orangered;
+        display: flex;  // Removes whitespace underneath star icons
     }
 
     &__icon-star,
