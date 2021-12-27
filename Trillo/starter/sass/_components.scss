@@ -226,11 +226,22 @@
         margin-right: .5rem;
     }
 
-    &__rating {}
+    &__rating {
+        background-color: var(--color-primary);
+        color: #FFFFFF;
+        margin-left: 3rem;
+        align-self: stretch;
+    }
 
-    &__rating-average {}
+    &__rating-average {
+        font-size: 2.25rem;
+        font-weight: 300;
+    }
 
-    &__rating-count {}
+    &__rating-count {
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
 }
 
 // INLINE BUTTON
