@@ -216,7 +216,11 @@
         fill: var(--color-primary);
     }
 
-    &__location {}
+    &__location {
+        font-size: 1.2rem;  // Will be inherited by the location icon
+        display: flex;
+        align-items: center;
+    }
 
     &__rating {}
 
@@ -243,7 +247,7 @@
 
     &:focus {
         outline: none;  // Removes the default blue border
-        animation: pulsate 1s;
+        animation: pulsate 1s infinite;
     }
 }
 

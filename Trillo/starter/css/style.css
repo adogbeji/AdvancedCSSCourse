@@ -269,6 +269,11 @@ body {
   height: 1.75rem;
   fill: var(--color-primary);
 }
+.overview__location {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
 .btn-inline {
   border: none;
   color: var(--color-primary);
@@ -285,7 +290,7 @@ body {
 }
 .btn-inline:focus {
   outline: none;
-  animation: pulsate 1s;
+  animation: pulsate 1s infinite;
 }
 
 @keyframes pulsate {
