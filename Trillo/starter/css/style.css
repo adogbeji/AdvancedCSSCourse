@@ -274,6 +274,9 @@ body {
   display: flex;
   align-items: center;
 }
+.overview__icon-location {
+  margin-right: 0.5rem;
+}
 .btn-inline {
   border: none;
   color: var(--color-primary);
