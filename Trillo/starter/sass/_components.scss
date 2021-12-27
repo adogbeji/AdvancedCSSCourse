@@ -240,4 +240,19 @@
     &:hover {
         color: var(--color-grey-dark-1);
     }
+
+    &:focus {
+        outline: none;  // Removes the default blue border
+    }
+}
+
+
+@keyframes pulsate {  // Percentages correspond to times during animation
+    0% {  // Before animation starts
+    }
+
+    50% {}
+
+    100% {  // When animation has finished
+    }
 }

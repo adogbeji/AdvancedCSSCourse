@@ -283,5 +283,10 @@ body {
 .btn-inline:hover {
   color: var(--color-grey-dark-1);
 }
+.btn-inline:focus {
+  outline: none;
+}
+
+@keyframes pulsate {}
 
 /*# sourceMappingURL=style.css.map */
