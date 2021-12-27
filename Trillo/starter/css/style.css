@@ -68,7 +68,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #FFFFFF;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: 0.1rem solid var(--color-grey-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -250,6 +250,7 @@ body {
 
 .overview {
   display: flex;
+  border-bottom: 0.1rem solid var(--color-grey-light-2);
 }
 .overview__stars {
   margin-right: auto;
