@@ -198,7 +198,13 @@
     align-items: center;
     border-bottom: .1rem solid var(--color-grey-light-2);
 
-    &__heading {}
+    &__heading {
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        padding: 1.5rem 3rem;
+    }
 
     &__stars{
         margin-right: auto;  // Creates space between 2nd and 3rd hotel overview elements 

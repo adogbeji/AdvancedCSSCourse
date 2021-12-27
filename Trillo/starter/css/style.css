@@ -253,6 +253,13 @@ body {
   align-items: center;
   border-bottom: 0.1rem solid var(--color-grey-light-2);
 }
+.overview__heading {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1.5rem 3rem;
+}
 .overview__stars {
   margin-right: auto;
 }
