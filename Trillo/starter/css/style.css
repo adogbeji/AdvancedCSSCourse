@@ -250,6 +250,7 @@ body {
 
 .overview {
   display: flex;
+  align-items: center;
   border-bottom: 0.1rem solid var(--color-grey-light-2);
 }
 .overview__stars {
