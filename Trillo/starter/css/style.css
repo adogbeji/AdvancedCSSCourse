@@ -389,6 +389,9 @@ body {
   display: flex;
   align-items: center;
 }
+.recommend__count {
+  margin-right: auto;
+}
 .recommend__photo {
   box-sizing: content-box;
   width: 4rem;

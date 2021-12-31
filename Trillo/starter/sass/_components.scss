@@ -340,7 +340,9 @@
     display: flex;
     align-items: center;
 
-    &__count {}
+    &__count {
+        margin-right: auto;  // Creates space between text and images
+    }
 
     &__friends {}
 
