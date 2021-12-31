@@ -44,7 +44,9 @@
 }
 
 .description {
-    background-color: orangered;  // Testing
+    background-color: #FFFFFF; 
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
     flex: 0 0 60%;
     margin-right: 4.5rem;  // Creates space between the description and user reviews
 }
