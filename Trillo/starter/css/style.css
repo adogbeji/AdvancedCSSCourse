@@ -376,7 +376,11 @@ body {
   width: 2rem;
   height: 2rem;
   margin-right: 0.7rem;
-  background-image: url("../img/chevron-thin-right.svg");
+  background-color: var(--color-primary);
+  -webkit-mask-image: url("../img/chevron-thin-right.svg");
+  mask-image: url("../img/chevron-thin-right.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

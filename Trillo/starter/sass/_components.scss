@@ -318,6 +318,16 @@
         width: 2rem;
         height: 2rem;
         margin-right: .7rem;
-        background-image: url('../img/chevron-thin-right.svg');
+
+        // Older browsers
+        // background-image: url('../img/chevron-thin-right.svg');
+        // background-size: cover;
+
+        // Newer browsers - masks
+        background-color: var(--color-primary);
+        -webkit-mask-image: url('../img/chevron-thin-right.svg');
+        mask-image: url('../img/chevron-thin-right.svg');
+        -webkit-mask-size: cover;  // Makes icon cover entire element
+        mask-size: cover;
     }
 }
