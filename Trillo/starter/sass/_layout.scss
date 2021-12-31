@@ -35,3 +35,20 @@
 
     flex: 1;
 }
+
+.detail {
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+}
+
+.description {
+    background-color: orangered;  // Testing
+    flex: 0 0 60%;
+    margin-right: 4.5rem;  // Creates space between the description and user reviews
+}
+
+.user-reviews {
+    background-color: yellowgreen;  // Testing
+    flex: 1;
+}
