@@ -363,6 +363,20 @@ body {
   padding: 3rem 0;
   border-top: var(--line);
   border-bottom: var(--line);
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__item {
+  flex: 0 0 50%;
+  margin-bottom: 0.7rem;
+}
+.list__item::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.7rem;
+  background-image: url("../img/chevron-thin-right.svg");
 }
 
 /*# sourceMappingURL=style.css.map */

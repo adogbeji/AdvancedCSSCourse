@@ -303,4 +303,21 @@
     padding: 3rem 0;
     border-top: var(--line);
     border-bottom: var(--line);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: .7rem;
+    }
+
+    &__item::before {  // ::before pseudo-element contains the SVG file as a background image
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-right: .7rem;
+        background-image: url('../img/chevron-thin-right.svg');
+    }
 }
