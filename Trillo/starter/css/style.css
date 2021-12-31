@@ -353,5 +353,8 @@ body {
     box-shadow: none;
   }
 }
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
 
 /*# sourceMappingURL=style.css.map */
