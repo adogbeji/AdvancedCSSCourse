@@ -335,11 +335,21 @@
 // RECOMMEND
 .recommend {
     font-size: 1.3rem;
-    color: var(--color-grey-light-3);
+    color: var(--color-grey-dark-3);
+
+    display: flex;
+
+    &__count {}
+
+    &__friends {}
 
     &__photo {
         width: 4rem;
         height: 4rem;
         border-radius: 50%;  // Creates perfect circle
+
+        &:not(:last-child) {
+            margin-right: -1.5rem;
+        }
     }
 }

@@ -385,12 +385,16 @@ body {
 
 .recommend {
   font-size: 1.3rem;
-  color: var(--color-grey-light-3);
+  color: var(--color-grey-dark-3);
+  display: flex;
 }
 .recommend__photo {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
+}
+.recommend__photo:not(:last-child) {
+  margin-right: -1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
