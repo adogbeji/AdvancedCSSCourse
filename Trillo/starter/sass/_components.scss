@@ -344,11 +344,13 @@
     &__friends {}
 
     &__photo {
+        box-sizing: content-box;  // Prevents border from being included in image dimensions
         width: 4rem;
         height: 4rem;
         border-radius: 50%;  // Creates perfect circle
+        border: .3rem solid #FFFFFF;  // Creates white border around overlapping images
 
-        &:not(:last-child) {
+        &:not(:last-child) {  // Gives all images, except the last, a negative right margin
             margin-right: -1.5rem;
         }
     }

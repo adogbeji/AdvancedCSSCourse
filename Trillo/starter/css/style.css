@@ -389,9 +389,11 @@ body {
   display: flex;
 }
 .recommend__photo {
+  box-sizing: content-box;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
+  border: 0.3rem solid #FFFFFF;
 }
 .recommend__photo:not(:last-child) {
   margin-right: -1.5rem;
