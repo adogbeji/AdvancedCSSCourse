@@ -315,8 +315,8 @@
     &__item::before {  // ::before pseudo-element contains the SVG file as a background image
         content: '';
         display: inline-block;
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
         margin-right: .7rem;
 
         // Older browsers

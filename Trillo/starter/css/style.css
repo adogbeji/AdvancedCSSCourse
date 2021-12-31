@@ -373,8 +373,8 @@ body {
 .list__item::before {
   content: "";
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
   margin-right: 0.7rem;
   background-color: var(--color-primary);
   -webkit-mask-image: url("../img/chevron-thin-right.svg");
