@@ -110,7 +110,6 @@ body {
 }
 
 .user-reviews {
-  background-color: yellowgreen;
   flex: 1;
 }
 
@@ -401,6 +400,18 @@ body {
 }
 .recommend__photo:not(:last-child) {
   margin-right: -1.5rem;
+}
+
+.review {
+  background-color: #FFFFFF;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+}
+.review__photo {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
