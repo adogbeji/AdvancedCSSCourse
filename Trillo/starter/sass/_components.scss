@@ -366,9 +366,12 @@
     padding: 3rem;
     margin-bottom: 3.5rem;
     position: relative;
+    overflow: hidden;
 
     &__text {
         margin-bottom: 2rem;
+        z-index: 10;
+        position: relative;
     }
 
     &__user {
@@ -414,5 +417,6 @@
         font-size: 20rem;
         color: var(--color-grey-light-2);
         font-family: sans-serif;  // Browser's default sans serif font
+        z-index: 1;
     }
 }
