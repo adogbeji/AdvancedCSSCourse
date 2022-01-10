@@ -492,6 +492,8 @@ body {
 .btn__visible {
   display: inline-block;
   padding: 2rem 7.5rem;
+  width: 100%;
+  height: 100%;
 }
 .btn__invisible {
   display: inline-block;
@@ -501,6 +503,13 @@ body {
   width: 100%;
   height: 100%;
   padding: 2rem 0;
+  transition: all 0.2s;
+}
+.btn:hover .btn__visible {
+  transform: translateY(100%);
+}
+.btn:hover .btn__invisible {
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
