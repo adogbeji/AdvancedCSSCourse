@@ -453,7 +453,10 @@
     background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
     color: #FFFFFF;
 
-    &__visible {}
+    &__visible {
+        display: inline-block;
+        padding: 2rem 7.5rem;
+    }
 
     &__invisible {}
 }
