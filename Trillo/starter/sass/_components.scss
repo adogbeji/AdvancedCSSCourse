@@ -454,6 +454,7 @@
     color: #FFFFFF;
     position: relative;
     overflow: hidden;  // Hides the 'invisible' span element
+    cursor: pointer;
 
     & > * {  // Code that applies to all child elements
         display: inline-block;

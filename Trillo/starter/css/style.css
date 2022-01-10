@@ -488,6 +488,7 @@ body {
   color: #FFFFFF;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .btn > * {
   display: inline-block;
