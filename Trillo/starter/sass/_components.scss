@@ -363,7 +363,7 @@
         border: .3rem solid #FFFFFF;  // Creates white border around overlapping images
 
         &:not(:last-child) {  // Gives all images, except the last, a negative right margin
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 }

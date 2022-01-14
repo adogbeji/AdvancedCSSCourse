@@ -423,7 +423,7 @@ body {
   border: 0.3rem solid #FFFFFF;
 }
 .recommend__photo:not(:last-child) {
-  margin-right: -1.5rem;
+  margin-right: -2rem;
 }
 
 .review {
