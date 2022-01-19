@@ -52,8 +52,11 @@
     border-bottom: var(--line);
 
     @media only screen and (max-width: $bp-medium) {
-        padding: 2rem;
-        margin-right: 3rem;
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
     }
 }
 
@@ -64,6 +67,11 @@
     padding: 3rem;
     flex: 0 0 60%;
     margin-right: 4.5rem;  // Creates space between the description and user reviews
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
 }
 
 .user-reviews {
