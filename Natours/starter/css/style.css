@@ -160,6 +160,36 @@ body {
   /* Automatically applies styles of the 0% BEFORE the animation starts */
 }
 
+._73501 {
+  display: grid;
+  grid-template-rows: repeat(7, min-content);
+}
+._73501 > * {
+  font-size: 2.6rem;
+  padding: 0.5rem;
+}
+._73501-section-1 {
+  background-color: #00FFFF;
+}
+._73501-section-2 {
+  background-color: #F4A4B4;
+}
+._73501-section-3 {
+  background-color: #333333;
+}
+._73501-section-4 {
+  background-color: #0000FF;
+}
+._73501-section-5 {
+  background-color: #FFD700;
+}
+._73501-section-6 {
+  background-color: #7E0FC5;
+}
+._73501-section-7 {
+  background-color: #808080;
+}
+
 .header {
   position: relative;
   height: 95vh;
