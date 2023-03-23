@@ -107,6 +107,12 @@ body {
   animation: moveInRight 1s ease-out;
 }
 
+._73501-section-2-heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
