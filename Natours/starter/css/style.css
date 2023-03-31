@@ -116,6 +116,11 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+._73501-section-2-heading-secondary:hover {
+  transform: skewY(20deg);
 }
 
 .btn:link, .btn:visited {
