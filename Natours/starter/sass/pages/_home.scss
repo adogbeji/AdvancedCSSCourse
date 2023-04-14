@@ -5,4 +5,10 @@
         padding: 25rem 0;
         margin-top: -20vh;  // Moves entire section up
     }
+
+    &-text-photo {
+        display: grid;
+        grid-template-rows: min-content;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
