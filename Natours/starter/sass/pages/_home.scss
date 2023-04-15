@@ -1,14 +1,23 @@
 ._73501-section-2 {
 
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(2, 1fr);
+
+    & > * {  // Testing
+        font-size: 2.6rem;
+        padding: .5rem;
+    }
+
     &-about {
         background-color: $color-grey-light-1;
         padding: 25rem 0;
         margin-top: -20vh;  // Moves entire section up
     }
 
-    &-text-photo {
-        display: grid;
-        grid-template-rows: min-content;
-        grid-template-columns: repeat(2, 1fr);
-    }
+    // &-text-photo {
+    //     display: grid;
+    //     grid-template-rows: min-content;
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
 }
