@@ -52,4 +52,16 @@
       animation: moveInFromBottom 0.5s ease-out 0.75s;
       animation-fill-mode: backwards;  /* Automatically applies styles of the 0% BEFORE the animation starts */
     }
+}
+
+.btn-text {
+
+  &:link,
+  &:visited {
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: .1rem solid $color-primary;
+    padding: .3rem;
   }
+}

@@ -3,7 +3,7 @@
     margin-top: -20vh;  // Moves entire section up
 
     display: grid;
-    grid-template-rows: repeat(2, min-content);
+    grid-template-rows: min-content 40vw;
     grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
 
     row-gap: 10rem;
