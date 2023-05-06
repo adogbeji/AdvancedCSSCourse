@@ -8,7 +8,7 @@
       border-radius: 10rem;
       transition: all 0.2s;
       position: relative;  /* Reference for ::after psuedo-element */
-      font-size: 1.6rem;  /* This makes it equal to 16px as it was before */
+      font-size: $default-font-size;  /* This makes it equal to 16px as it was before */
     }
     
     &:hover {
@@ -58,6 +58,7 @@
 
   &:link,
   &:visited {
+    font-size: $default-font-size;
     color: $color-primary;
     display: inline-block;
     text-decoration: none;
