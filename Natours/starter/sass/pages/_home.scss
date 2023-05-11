@@ -65,4 +65,16 @@
         // background-color: #FF0000;  // Testing
         margin-bottom: 2rem;
     }
+
+    &-photos {
+        display: grid;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    &-photo {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 }
