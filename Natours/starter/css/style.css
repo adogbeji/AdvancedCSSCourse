@@ -322,6 +322,14 @@ body {
   height: auto;
   display: block;
 }
+._73501-section-2-photo--1 {
+  grid-row: 1/6;
+  grid-column: 1/6;
+}
+._73501-section-2-photo--2 {
+  grid-row: 2/6;
+  grid-column: 5/-1;
+}
 
 /*
 COLORS:
