@@ -328,7 +328,11 @@ body {
 }
 ._73501-section-2-photo--2 {
   grid-row: 2/6;
-  grid-column: 5/-1;
+  grid-column: 4/-1;
+}
+._73501-section-2-photo--3 {
+  grid-row: 4/8;
+  grid-column: 2/7;
 }
 
 /*
