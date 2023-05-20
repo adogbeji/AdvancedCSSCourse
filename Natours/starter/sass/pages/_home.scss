@@ -76,6 +76,8 @@
         width: 100%;
         height: auto;
         display: block;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: .2rem;
     }
 
     &-photo--1 {
