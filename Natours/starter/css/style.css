@@ -325,8 +325,10 @@ body {
   border-radius: 0.2rem;
   z-index: 10;
   transition: all 0.2s;
+  outline-offset: 2rem;
 }
 ._73501-section-2-photo:hover {
+  outline: 1.5rem solid #55c57a;
   transform: scale(1.05);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
