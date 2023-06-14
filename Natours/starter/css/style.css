@@ -366,6 +366,11 @@ body {
   grid-column: 2/7;
 }
 
+._73501-section-3 {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  padding: 20rem 0;
+}
+
 /*
 COLORS:
 Light green: #7ed56f
