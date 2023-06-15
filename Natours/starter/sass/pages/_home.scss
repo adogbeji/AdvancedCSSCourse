@@ -110,6 +110,24 @@
     background-image: linear-gradient(to right bottom, 
     rgba($color-primary-light, 0.8), 
     rgba($color-primary-dark, 0.8)), 
-    url('../img/hero.jpg');
+    url('../img/nat-4.jpg');
     padding: 20rem 0;
+    background-size: cover;
+
+    &-card-box {
+        background-color: #808080;  // Testing
+        width: 90%;
+        margin: auto;
+
+        display: flex;
+        justify-content: center;
+
+        column-gap: 1.6rem;
+    }
+
+    &-card {
+        background-color: rgba($color-white, .8);
+
+        flex: 0 0 22%;
+    }
 }
