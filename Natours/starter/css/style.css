@@ -238,11 +238,18 @@ body {
 .card__body {
   padding: 1rem;
 }
+.card___73501-section-3-text-box {
+  text-align: center;
+}
+.card___73501-section-3-icon-1, .card___73501-section-3-icon-2, .card___73501-section-3-icon-3, .card___73501-section-3-icon-4 {
+  width: 8.5rem;
+  height: 8.5rem;
+}
 .card___73501-section-3-text-1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .card___73501-section-3-text-2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 ._73501 {
