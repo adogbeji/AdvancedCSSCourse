@@ -129,5 +129,9 @@
         background-color: rgba($color-white, .8);
 
         flex: 0 0 22%;
+
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+        }
     }
 }
