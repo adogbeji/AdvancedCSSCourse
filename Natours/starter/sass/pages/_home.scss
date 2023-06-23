@@ -114,6 +114,12 @@
     padding: 20rem 0;
     background-size: cover;
 
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+
     &-card-box {
         background-color: #808080;  // Testing
         width: 90%;
