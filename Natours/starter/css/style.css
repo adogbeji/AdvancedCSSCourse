@@ -377,6 +377,7 @@ body {
   padding: 20rem 0;
   background-size: cover;
   transform: skewY(-7deg);
+  margin-top: -10rem;
 }
 ._73501-section-3 > * {
   transform: skewY(7deg);
