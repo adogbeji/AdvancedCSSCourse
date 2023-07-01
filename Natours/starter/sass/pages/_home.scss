@@ -142,3 +142,12 @@
         }
     }
 }
+
+._73501-section-4 {
+    background-color: $color-grey-light-1;
+    padding: 2.5rem 0 50rem 0;
+    margin-top: -10rem;
+
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+}

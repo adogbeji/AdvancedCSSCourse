@@ -398,6 +398,14 @@ body {
   transform: translateY(-1.5rem) scale(1.03);
 }
 
+._73501-section-4 {
+  background-color: #F7F7F7;
+  padding: 2.5rem 0 50rem 0;
+  margin-top: -10rem;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+}
+
 /*
 COLORS:
 Light green: #7ed56f
