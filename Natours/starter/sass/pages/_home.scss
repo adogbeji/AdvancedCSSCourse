@@ -150,4 +150,9 @@
 
     display: grid;
     grid-template-rows: repeat(3, min-content);
+
+    &-card:hover {
+        transition: .5s;
+        transform: rotateY(180deg);
+    }
 }

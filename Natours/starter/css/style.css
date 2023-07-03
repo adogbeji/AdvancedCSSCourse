@@ -405,6 +405,10 @@ body {
   display: grid;
   grid-template-rows: repeat(3, min-content);
 }
+._73501-section-4-card:hover {
+  transition: 0.5s;
+  transform: rotateY(180deg);
+}
 
 /*
 COLORS:
