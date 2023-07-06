@@ -134,6 +134,8 @@
 
     &-card {
         background-color: rgba($color-white, .8);
+        perspective: 150rem;
+        -moz-perspective: 150rem;
 
         flex: 0 0 20%;
 
@@ -147,12 +149,12 @@
     background-color: $color-grey-light-1;
     padding: 2.5rem 0 50rem 0;
     margin-top: -10rem;
+    transition: all .8s;
 
     display: grid;
     grid-template-rows: repeat(3, min-content);
 
     &-card:hover {
-        transition: .5s;
         transform: rotateY(180deg);
     }
 }
