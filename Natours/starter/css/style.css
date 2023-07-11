@@ -238,6 +238,9 @@ body {
 .card__body {
   padding: 1rem;
 }
+.card__body--1 {
+  padding: 1rem;
+}
 .card___73501-section-3-text-box {
   text-align: center;
 }
@@ -408,7 +411,7 @@ body {
   display: grid;
   grid-template-rows: repeat(3, min-content);
 }
-._73501-section-4-card:hover {
+._73501-section-4-card:hover > .card__body--1 {
   transform: rotateY(180deg);
 }
 
