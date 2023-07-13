@@ -154,7 +154,11 @@
     display: grid;
     grid-template-rows: repeat(3, min-content);
 
-    &-card:hover > .card__body--1 {
+    &-card:hover > .card__body--front {
         transform: rotateY(180deg);
+    }
+
+    &-card:hover > .card__body--back {
+        transform: rotateY(0);
     }
 }

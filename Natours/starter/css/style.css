@@ -238,13 +238,14 @@ body {
 .card__body {
   padding: 1rem;
 }
-.card__body--1 {
+.card__body--front {
   background-color: orangered;
   padding: 1rem;
 }
-.card__body--2 {
+.card__body--back {
   background-color: green;
   padding: 1rem;
+  transform: rotateY(180deg);
 }
 .card___73501-section-3-text-box {
   text-align: center;
@@ -416,8 +417,11 @@ body {
   display: grid;
   grid-template-rows: repeat(3, min-content);
 }
-._73501-section-4-card:hover > .card__body--1 {
+._73501-section-4-card:hover > .card__body--front {
   transform: rotateY(180deg);
+}
+._73501-section-4-card:hover > .card__body--back {
+  transform: rotateY(0);
 }
 
 /*
