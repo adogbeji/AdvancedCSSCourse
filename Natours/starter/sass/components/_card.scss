@@ -13,6 +13,12 @@
         // padding: .2rem 1.6rem;
         padding: 1rem;
 
+        &--front, &--back  {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
         &--front {
             background-color: orangered;
             padding: 1rem;
