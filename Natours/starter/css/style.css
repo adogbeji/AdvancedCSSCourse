@@ -242,15 +242,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  backface-visibility: hidden;
 }
 .card__body--front {
   background-color: orangered;
-  padding: 1rem;
 }
 .card__body--back {
   background-color: green;
-  padding: 1rem;
   transform: rotateY(180deg);
 }
 .card___73501-section-3-text-box {
