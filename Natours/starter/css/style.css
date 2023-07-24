@@ -248,8 +248,10 @@ body {
   background-color: #FFFFFF;
 }
 .card__body--back {
-  background-color: green;
   transform: rotateY(180deg);
+}
+.card__body--back-1 {
+  background-image: linear-gradient(to right bottom, #FFB900, #FF7730);
 }
 .card___73501-section-3-text-box {
   text-align: center;
