@@ -160,6 +160,8 @@
         perspective: 150rem;
         -moz-perspective: 150rem;
         position: relative;
+        border-radius: .3rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         flex: 0 0 20%;
 
