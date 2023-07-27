@@ -428,7 +428,7 @@ body {
   transform: translateY(-1.5rem) scale(1.03);
 }
 ._73501-section-4-card:hover > .card__body--front {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 ._73501-section-4-card:hover > .card__body--back {
   transform: rotateY(0);
