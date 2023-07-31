@@ -267,6 +267,11 @@ body {
 .card___73501-section-3-text-2 {
   font-size: 1.8rem;
 }
+.card___73501-section-4-photo-box-1 {
+  height: 25rem;
+  background-image: url("../img/nat-5.jpg");
+  background-size: cover;
+}
 
 ._73501 {
   display: grid;
