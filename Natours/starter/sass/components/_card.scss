@@ -65,7 +65,8 @@
 
         &-photo-box-1 {
             height: 25rem;  // Required for image to show
-            background-image: url('../img/nat-5.jpg');
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+                              url('../img/nat-5.jpg');
             background-size: cover;
         }
 
