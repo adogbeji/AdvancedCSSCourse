@@ -271,6 +271,7 @@ body {
   height: 25rem;
   background-image: linear-gradient(to right bottom, #FFB900, #FF7730), url("../img/nat-5.jpg");
   background-size: cover;
+  background-blend-mode: screen;
 }
 .card___73501-section-4-photo-box-2 {
   height: 25rem;
