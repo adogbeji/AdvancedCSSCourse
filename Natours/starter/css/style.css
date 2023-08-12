@@ -272,6 +272,7 @@ body {
   background-image: linear-gradient(to right bottom, #FFB900, #FF7730), url("../img/nat-5.jpg");
   background-size: cover;
   background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .card___73501-section-4-photo-box-2 {
@@ -312,6 +313,8 @@ body {
   background-size: cover;
   background-position: top;
   /* Ensures that top of image always stays at top of container on all viewport sizes */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* Specify coordinates which define the polygon */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* Specify coordinates which define the polygon */
 }
